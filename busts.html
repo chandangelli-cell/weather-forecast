@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bust Detection | ForecastBust AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">☁️</div>
+
+            <div>
+                <h2>ForecastBust</h2>
+                
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">🏠 Dashboard</a>
+            <a href="forecasts.html">🌦️ Forecasts</a>
+            <a class="active" href="busts.html">⚠️ Bust Detection</a>
+            <a href="map.html">🗺️ Weather Map</a>
+            <a href="automation.html">⚙️ Automation</a>
+            <a href="reports.html">📊 Reports</a>
+        </nav>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Forecast Bust Detection</h1>
+
+                <p>
+                    AI-based identification of significant forecast errors.
+                </p>
+            </div>
+
+            <div class="status-badge">
+                🤖 AI Engine Ready
+            </div>
+
+        </header>
+
+
+        <section class="hero">
+
+            <div>
+
+                <span class="eyebrow">
+                    AI ANALYSIS ENGINE
+                </span>
+
+                <h2>
+                    Detect Forecast Busts Before They Matter
+                </h2>
+
+                <p>
+                    The system compares forecast and observed weather
+                    values and identifies unusual deviations automatically.
+                </p>
+
+                <button
+                    class="primary-btn"
+                    onclick="runBustDetection()">
+
+                    ▶ Run AI Detection
+
+                </button>
+
+            </div>
+
+            <div class="hero-weather">
+                ⚡
+            </div>
+
+        </section>
+
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <span>🔎 Forecasts Checked</span>
+
+                <strong>126</strong>
+
+                <small>Last analysis cycle</small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>⚠️ Busts Detected</span>
+
+                <strong>07</strong>
+
+                <small>Requires attention</small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>🎯 Detection Accuracy</span>
+
+                <strong>94.2%</strong>
+
+                <small>Model performance</small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>🚨 Critical Alerts</span>
+
+                <strong>02</strong>
+
+                <small>High deviation</small>
+
+            </div>
+
+        </section>
+
+
+        <section class="panel">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>Detected Forecast Busts</h2>
+
+                    <p>
+                        AI-generated anomaly records
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Location</th>
+
+                            <th>Parameter</th>
+
+                            <th>Forecast</th>
+
+                            <th>Actual</th>
+
+                            <th>Deviation</th>
+
+                            <th>Severity</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Mumbai</td>
+
+                            <td>Rainfall</td>
+
+                            <td>18 mm</td>
+
+                            <td>42 mm</td>
+
+                            <td>+133%</td>
+
+                            <td>
+                                <span class="danger-tag">
+                                    Critical
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Delhi</td>
+
+                            <td>Temperature</td>
+
+                            <td>31°C</td>
+
+                            <td>36°C</td>
+
+                            <td>+16%</td>
+
+                            <td>
+                                <span class="danger-tag">
+                                    High
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Kolkata</td>
+
+                            <td>Humidity</td>
+
+                            <td>62%</td>
+
+                            <td>78%</td>
+
+                            <td>+26%</td>
+
+                            <td>
+                                <span class="warning-tag">
+                                    Medium
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Chennai</td>
+
+                            <td>Wind</td>
+
+                            <td>12 km/h</td>
+
+                            <td>20 km/h</td>
+
+                            <td>+66%</td>
+
+                            <td>
+                                <span class="warning-tag">
+                                    Medium
+                                </span>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <section class="panel">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>Detection Pipeline</h2>
+
+                    <p>
+                        How ForecastBust AI identifies a bust
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+                <div class="mini-card">
+
+                    📥
+
+                    <h3>Forecast</h3>
+
+                    <p>
+                        Collect predicted values
+                    </p>
+
+                </div>
+
+
+                <div class="mini-card">
+
+                    📡
+
+                    <h3>Observation</h3>
+
+                    <p>
+                        Collect actual weather
+                    </p>
+
+                </div>
+
+
+                <div class="mini-card">
+
+                    🧮
+
+                    <h3>Error Analysis</h3>
+
+                    <p>
+                        Calculate deviation
+                    </p>
+
+                </div>
+
+
+                <div class="mini-card">
+
+                    🤖
+
+                    <h3>AI Decision</h3>
+
+                    <p>
+                        Detect forecast bust
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+function runBustDetection() {
+
+    alert(
+        "🤖 AI Detection Started!\n\nForecast data is being compared with actual observations."
+    );
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Reports | ForecastBust AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                ☁️
+            </div>
+
+            <div>
+
+                <h2>
+                    ForecastBust
+                </h2>
+
+                
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">
+                🏠 Dashboard
+            </a>
+
+            <a href="forecasts.html">
+                🌦️ Forecasts
+            </a>
+
+            <a href="busts.html">
+                ⚠️ Bust Detection
+            </a>
+
+            <a href="map.html">
+                🗺️ Weather Map
+            </a>
+
+            <a href="automation.html">
+                ⚙️ Automation
+            </a>
+
+            <a class="active" href="reports.html">
+                📊 Reports
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="main-content">
+
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+                    Weather Reports
+                </h1>
+
+                <p>
+                    Analyze forecast accuracy and detected weather anomalies.
+                </p>
+
+            </div>
+
+
+            <button
+                class="primary-btn"
+                onclick="window.print()">
+
+                🖨️ Export / Print
+
+            </button>
+
+        </header>
+
+
+        <section class="hero">
+
+            <div>
+
+                <span class="eyebrow">
+                    ANALYTICS & REPORTING
+                </span>
+
+                <h2>
+                    Forecast Performance Report
+                </h2>
+
+                <p>
+                    Summary of forecast accuracy, errors,
+                    busts and system activity.
+                </p>
+
+            </div>
+
+
+            <div class="hero-weather">
+                📊
+            </div>
+
+        </section>
+
+
+        <section class="stats-grid">
+
+
+            <div class="stat-card">
+
+                <span>
+                    🎯 Overall Accuracy
+                </span>
+
+                <strong>
+                    91.4%
+                </strong>
+
+                <small>
+                    Current period
+                </small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    📡 Forecasts Processed
+                </span>
+
+                <strong>
+                    3,842
+                </strong>
+
+                <small>
+                    This month
+                </small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    ⚠️ Busts Detected
+                </span>
+
+                <strong>
+                    164
+                </strong>
+
+                <small>
+                    This month
+                </small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    🚨 Alerts Generated
+                </span>
+
+                <strong>
+                    72
+                </strong>
+
+                <small>
+                    This month
+                </small>
+
+            </div>
+
+
+        </section>
+
+
+        <section class="panel">
+
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>
+                        Regional Performance
+                    </h2>
+
+                    <p>
+                        Forecast accuracy by region
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Region
+                            </th>
+
+                            <th>
+                                Forecasts
+                            </th>
+
+                            <th>
+                                Accuracy
+                            </th>
+
+                            <th>
+                                Busts
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <tr>
+
+                            <td>
+                                South India
+                            </td>
+
+                            <td>
+                                1,248
+                            </td>
+
+                            <td>
+                                93.8%
+                            </td>
+
+                            <td>
+                                34
+                            </td>
+
+                            <td>
+
+                                <span class="success-tag">
+                                    Stable
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                North India
+                            </td>
+
+                            <td>
+                                1,102
+                            </td>
+
+                            <td>
+                                89.2%
+                            </td>
+
+                            <td>
+                                61
+                            </td>
+
+                            <td>
+
+                                <span class="warning-tag">
+                                    Monitor
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                West India
+                            </td>
+
+                            <td>
+                                824
+                            </td>
+
+                            <td>
+                                90.1%
+                            </td>
+
+                            <td>
+                                42
+                            </td>
+
+                            <td>
+
+                                <span class="warning-tag">
+                                    Monitor
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                East India
+                            </td>
+
+                            <td>
+                                668
+                            </td>
+
+                            <td>
+                                92.7%
+                            </td>
+
+                            <td>
+                                27
+                            </td>
+
+                            <td>
+
+                                <span class="success-tag">
+                                    Stable
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <section class="panel">
+
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>
+                        Monthly Summary
+                    </h2>
+
+                    <p>
+                        ForecastBust AI system activity
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+
+                <div class="mini-card">
+
+                    📈
+
+                    <h3>
+                        Forecast Accuracy
+                    </h3>
+
+                    <p>
+                        91.4%
+                    </p>
+
+                </div>
+
+
+                <div class="mini-card">
+
+                    🔎
+
+                    <h3>
+                        Anomalies
+                    </h3>
+
+                    <p>
+                        164 detected
+                    </p>
+
+                </div>
+
+
+                <div class="mini-card">
+
+                    🚨
+
+                    <h3>
+                        Critical Busts
+                    </h3>
+
+                    <p>
+                        18 detected
+                    </p>
+
+                </div>
+
+
+                <div class="mini-card">
+
+                    ⚙️
+
+                    <h3>
+                        Automation Runs
+                    </h3>
+
+                    <p>
+                        720 completed
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

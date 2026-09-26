@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ForecastBust AI</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>☁ ForecastBust</h2>
+
+        
+
+        <nav>
+
+            <a href="index.html"
+               class="active">
+                🏠 Dashboard
+            </a>
+
+            <a href="forecasts.html">
+                🌦 Forecasts
+            </a>
+
+            <a href="busts.html">
+                🚨 Bust Detection
+            </a>
+
+            <a href="map.html">
+                🗺 Weather Map
+            </a>
+
+            <a href="automation.html">
+                ⚙ Automation
+            </a>
+
+            <a href="reports.html">
+                📊 Reports
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- Main Content -->
+
+    <main class="main">
+
+        <header>
+
+            <div>
+
+                <p class="small-title">
+                    SMART WEATHER MONITORING
+                </p>
+
+                <h1>
+                    Forecast Bust Dashboard
+                </h1>
+
+            </div>
+
+            <button id="refreshButton">
+                ↻ Refresh
+            </button>
+
+        </header>
+
+
+        <!-- Welcome Banner -->
+
+        <section class="hero">
+
+            <div>
+
+                <span class="badge">
+                    AI / ML MONITORING
+                </span>
+
+                <h2>
+                    Detect when forecasts
+                    <span>differ from reality.</span>
+                </h2>
+
+                <p>
+                    Automatically compare weather forecasts
+                    with actual observations and detect
+                    significant forecast errors.
+                </p>
+
+                <button id="runAI">
+                    ▶ Run AI Detection
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Statistics -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <p>Total Forecasts</p>
+
+                <h2 id="totalForecasts">
+                    1250
+                </h2>
+
+                <small>
+                    Forecast records
+                </small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <p>Analyzed</p>
+
+                <h2 id="analyzed">
+                    1180
+                </h2>
+
+                <small>
+                    Data processed
+                </small>
+
+            </div>
+
+
+            <div class="stat-card danger">
+
+                <p>Forecast Busts</p>
+
+                <h2 id="busts">
+                    142
+                </h2>
+
+                <small>
+                    Errors detected
+                </small>
+
+            </div>
+
+
+            <div class="stat-card success">
+
+                <p>Accuracy</p>
+
+                <h2>
+                    88.5%
+                </h2>
+
+                <small>
+                    Current model
+                </small>
+
+            </div>
+
+        </section>
+
+
+        <!-- Forecast Comparison -->
+
+        <section class="content-grid">
+
+            <div class="card">
+
+                <h3>
+                    Forecast vs Actual
+                </h3>
+
+                <p class="description">
+                    Rainfall comparison
+                </p>
+
+                <div id="chart"
+                     class="chart">
+
+                    <div class="bar forecast"
+                         style="height:80%">
+                    </div>
+
+                    <div class="bar actual"
+                         style="height:25%">
+                    </div>
+
+                    <div class="bar forecast"
+                         style="height:40%">
+                    </div>
+
+                    <div class="bar actual"
+                         style="height:38%">
+                    </div>
+
+                    <div class="bar forecast"
+                         style="height:20%">
+                    </div>
+
+                    <div class="bar actual"
+                         style="height:65%">
+                    </div>
+
+                </div>
+
+                <div class="legend">
+
+                    <span>
+                        🔵 Forecast
+                    </span>
+
+                    <span>
+                        🟢 Actual
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Alerts -->
+
+            <div class="card">
+
+                <h3>
+                    Recent Alerts
+                </h3>
+
+                <div class="alert">
+
+                    <div>🚨</div>
+
+                    <div>
+
+                        <b>
+                            Chennai Rainfall
+                        </b>
+
+                        <p>
+                            Forecast: 80 mm
+                        </p>
+
+                        <p>
+                            Actual: 15 mm
+                        </p>
+
+                    </div>
+
+                    <strong>
+                        82%
+                    </strong>
+
+                </div>
+
+
+                <div class="alert">
+
+                    <div>🚨</div>
+
+                    <div>
+
+                        <b>
+                            Delhi Rainfall
+                        </b>
+
+                        <p>
+                            Forecast: 10 mm
+                        </p>
+
+                        <p>
+                            Actual: 65 mm
+                        </p>
+
+                    </div>
+
+                    <strong>
+                        85%
+                    </strong>
+
+                </div>
+
+
+                <div class="alert">
+
+                    <div>⚠</div>
+
+                    <div>
+
+                        <b>
+                            Mumbai Temperature
+                        </b>
+
+                        <p>
+                            High forecast error
+                        </p>
+
+                    </div>
+
+                    <strong>
+                        HIGH
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- AI Pipeline -->
+
+        <section class="card pipeline-card">
+
+            <h3>
+                AI Detection Pipeline
+            </h3>
+
+            <div class="pipeline">
+
+                <div>
+                    <span>1</span>
+                    <b>Fetch Data</b>
+                </div>
+
+                <div>→</div>
+
+                <div>
+                    <span>2</span>
+                    <b>Clean Data</b>
+                </div>
+
+                <div>→</div>
+
+                <div>
+                    <span>3</span>
+                    <b>Run ML</b>
+                </div>
+
+                <div>→</div>
+
+                <div>
+                    <span>4</span>
+                    <b>Detect Bust</b>
+                </div>
+
+                <div>→</div>
+
+                <div>
+                    <span>5</span>
+                    <b>Send Alert</b>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

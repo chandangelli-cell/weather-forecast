@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Automation | ForecastBust AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                ☁️
+            </div>
+
+            <div>
+
+                <h2>
+                    ForecastBust
+                </h2>
+
+                
+
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">
+                🏠 Dashboard
+            </a>
+
+            <a href="forecasts.html">
+                🌦️ Forecasts
+            </a>
+
+            <a href="busts.html">
+                ⚠️ Bust Detection
+            </a>
+
+            <a href="map.html">
+                🗺️ Weather Map
+            </a>
+
+            <a class="active" href="automation.html">
+                ⚙️ Automation
+            </a>
+
+            <a href="reports.html">
+                📊 Reports
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="main-content">
+
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+                    Automated Workflow
+                </h1>
+
+                <p>
+                    Manage the complete forecast-bust detection pipeline.
+                </p>
+
+            </div>
+
+
+            <div class="status-badge">
+                ⚙️ Automation Ready
+            </div>
+
+        </header>
+
+
+        <section class="hero">
+
+            <div>
+
+                <span class="eyebrow">
+                    SMART AUTOMATION
+                </span>
+
+                <h2>
+                    From Weather Data to AI Alert
+                </h2>
+
+                <p>
+                    Automatically collect data, process observations,
+                    run AI analysis and generate alerts.
+                </p>
+
+                <button
+                    class="primary-btn"
+                    onclick="startAutomation()">
+
+                    ▶ Run Workflow
+
+                </button>
+
+            </div>
+
+
+            <div class="hero-weather">
+                ⚙️
+            </div>
+
+        </section>
+
+
+        <section class="panel">
+
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>
+                        Automation Pipeline
+                    </h2>
+
+                    <p>
+                        Current workflow status
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+
+                <div class="mini-card">
+
+                    ⏰
+
+                    <h3>
+                        Scheduler
+                    </h3>
+
+                    <p>
+                        Every 1 hour
+                    </p>
+
+                    <span class="success-tag">
+                        Active
+                    </span>
+
+                </div>
+
+
+                <div class="mini-card">
+
+                    📡
+
+                    <h3>
+                        Data Fetch
+                    </h3>
+
+                    <p>
+                        Weather API
+                    </p>
+
+                    <span class="success-tag">
+                        Connected
+                    </span>
+
+                </div>
+
+
+                <div class="mini-card">
+
+                    🧹
+
+                    <h3>
+                        Data Cleaning
+                    </h3>
+
+                    <p>
+                        Pandas Pipeline
+                    </p>
+
+                    <span class="success-tag">
+                        Ready
+                    </span>
+
+                </div>
+
+
+                <div class="mini-card">
+
+                    🤖
+
+                    <h3>
+                        AI Model
+                    </h3>
+
+                    <p>
+                        Bust Detection
+                    </p>
+
+                    <span class="success-tag">
+                        Ready
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <section class="panel">
+
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>
+                        Workflow Steps
+                    </h2>
+
+                    <p>
+                        Automated processing sequence
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="workflow-list">
+
+
+                <div class="workflow-step">
+
+                    <strong>01</strong>
+
+                    <div>
+
+                        <h3>
+                            Collect Forecast Data
+                        </h3>
+
+                        <p>
+                            Fetch forecast information from weather sources.
+                        </p>
+
+                    </div>
+
+                    <span class="success-tag">
+                        ✓
+                    </span>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <strong>02</strong>
+
+                    <div>
+
+                        <h3>
+                            Collect Actual Data
+                        </h3>
+
+                        <p>
+                            Retrieve observed weather conditions.
+                        </p>
+
+                    </div>
+
+                    <span class="success-tag">
+                        ✓
+                    </span>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <strong>03</strong>
+
+                    <div>
+
+                        <h3>
+                            Calculate Forecast Error
+                        </h3>
+
+                        <p>
+                            Compare forecast values against observations.
+                        </p>
+
+                    </div>
+
+                    <span class="success-tag">
+                        ✓
+                    </span>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <strong>04</strong>
+
+                    <div>
+
+                        <h3>
+                            AI Bust Detection
+                        </h3>
+
+                        <p>
+                            Identify significant forecast deviations.
+                        </p>
+
+                    </div>
+
+                    <span class="success-tag">
+                        ✓
+                    </span>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <strong>05</strong>
+
+                    <div>
+
+                        <h3>
+                            Generate Alert
+                        </h3>
+
+                        <p>
+                            Notify users about critical forecast busts.
+                        </p>
+
+                    </div>
+
+                    <span class="success-tag">
+                        ✓
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+function startAutomation() {
+
+    alert(
+        "⚙️ Automation Started!\n\n" +
+        "1. Fetching weather data\n" +
+        "2. Cleaning data\n" +
+        "3. Running AI model\n" +
+        "4. Detecting busts\n" +
+        "5. Generating alerts"
+    );
+
+}
+
+</script>
+
+
+</body>
+
+</html>
